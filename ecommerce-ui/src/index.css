@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.cart {
+  color:#adadad;
+  transition: all ease 0.3s;
+
+}
+.cart:hover {
+  color:#fc5158;
+}
+
+.yCart .cart {
+  color:#2e2925;
+}
+
+.listing img {width:100%;}
+#places { margin-top:100px;}
+
+.col-md-6.listing {
+  float: left;
+  margin-top: 20px;
+}
+.listing {
+  margin:20px 0;
+}
+
+.listing h2 {
+  font-family: 'Poppins';
+  font-weight:700;
+  font-size:1.3em;
+  margin-bottom:0
+}.listing h3 {
+  font-family: 'Poppins';
+  font-size:1em;
+  margin-top:0
+}
+.cart.btn-primary,.cart.btn-primary:active,.cart.btn-primary:focus  { background:#fc5158;
+  position: absolute;
+  bottom:10px;
+  right:10px;
+  font-weight: bold;
+  border: 1px solid #adadad
+}
+.cart.cartcancel.btn-primary,.cart.cartcancel.btn-primary:active { background:#2e2926 !important;
+  position: absolute;
+  bottom:10px;
+  right:10px;
+  font-weight: bold;
+  border: 1px solid #adadad
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus,.btn-primary.focus, .btn-primary:focus {
+  background-color: #fc5158;
+}
+.cart.btn-primary:hover {
+  background:#2e2925;
+}
+.star svg{width:20px; vertical-align: initial;}
+.star div {float:left; padding-right:10px;}
+.star svg.nofill path{fill:#adadad}
+
+#shopping {position: fixed; background: #d9d9d9; padding:20px;
+top:20vh;right:0;  transition: all ease 2s;max-width:25%}
+#shopping h2 { font-size:1.6rem; font-weight:bold;}
+#shopping h3 { font-size:1.2rem;font-weight:bold;margin-bottom:0;}
+#shopping h4 { font-size:1rem;margin-bottom:0;}
+.remove, #shopping p {margin:0}
+.buying {margin: 10px 0;}
+.remove {color:#fc0108;font-weight: bold;cursor: pointer;transition: color ease 0.5s;text-transform: uppercase;font-size:0.7em;}
+.remove:hover {color:#2e2925}
+@media only screen and (max-width: 768px) {
+  #shopping {bottom:calc(100vh - 100px);right:0; width:100%;}
+}
